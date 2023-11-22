@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de personas</title>
+</head>
+<body>
+    <h1>Lista de personas en Flask</h1>
+    <ol>
+        {% for persona in personas %}
+        <li>Saludos {{persona[0]}} {{persona[1]}} que cumplió {{persona[2]}} años</li>
+        {% endfor %}
+    </ol>
+</body>
+</html>

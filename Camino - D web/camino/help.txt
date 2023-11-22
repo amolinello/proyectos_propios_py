@@ -1,0 +1,27 @@
+Nota:
+Super usuario:
+id: administrador
+pass: 123456
+
+*Revisar el tipo de campo de fecha para que guarde automaticamente la fecha al modificar
+
+Importante!:
+Cuando no carguen los cambios en CSS se debe borrar el chache, es decir, CTRL+SHIFT+R
+
+id: 2
+Usuario ejemplo: persona
+Contraseña: 123456789+
+email: persona@mail.com
+state: Current
+last_log: "2023-07-12 10:53:00-05" ESTO SE DEBE MEJORAR PARA QUE GUARDE LA HORA
+
+#todo: ACÁ DEBO AGREGAR EL MODIFICAR EL TIEMPO DE INGRESO DEL USUARIO, ES DECIR, CUANDO INGRESO
+
+Tiene: 
+- Página login html creada
+- CSS de login.html creado y aplicado
+- Verificación de los datos enviados en el POST (usuario y contraseña)
+
+Falta: 
+- Mostrar mensaje de error si no es valido y cambiar el estado del usuario si falla 3 veces, de Current a Blocked
+- Un HTML más detallado donde muestre la información del usuario de otra base de datos con sus datos personales

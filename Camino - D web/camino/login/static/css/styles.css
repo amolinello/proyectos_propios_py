@@ -1,0 +1,85 @@
+html{
+    height: auto;
+    min-height: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgba(75, 152, 253, 0.493), white);
+}
+
+.contenedor{
+    display: grid;
+    place-items: center;
+    margin: 0 40%;
+}
+
+.contenedor h1{
+    font-size: 30px;
+    text-align: center;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 2px grey;
+    color: white;
+    padding: 10px 60px;
+    border: 3px solid rgba(0, 0, 0, 0.055);
+    border-radius: 6px;
+    background-color: rgba(50, 105, 255, 0.400);
+}
+
+.contenedor_login{
+    margin: 0px 35%;
+    border: 2px solid rgba(97, 8, 160, 0.1);
+    border-radius: 30px;
+    background: linear-gradient(rgba(100, 167, 255, 0.13),rgba(100, 180, 255, 0.13));
+}
+
+.contenedor_login h2{
+    font-size: 35px;
+    text-align: center;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.330);
+    color: rgba(97, 8, 160, 0.700);
+}
+
+.entradas{
+    text-align: left;
+    padding: 4px;
+    display: grid;
+    place-items: center;
+}
+
+.entradas input{
+    font-size: 18px;
+    width: 200px;
+    height: 30px;
+    padding: 3px 8px;
+    border: 1px solid rgba(128, 128, 128, 0.281);
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.boton{
+    display: grid;
+    place-items: center;
+    padding: 4px;
+    text-align: center;
+}
+.boton button{
+    font-size: 18px;
+    font-weight: bold;
+    width: 218px;
+    height: 38px;
+    padding: 3px 8px;
+    border: 1px solid rgba(128, 128, 128, 0.281);
+    background-color: rgba(58, 245, 83, 0.562);
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 1px 1px 1px gray;
+}
+.boton button:hover{
+    background-color: rgba(58, 245, 83, 0.658);
+}
+.boton button:active{
+    background-color: rgba(58, 245, 83, 0.849);
+}

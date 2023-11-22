@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="..\static\css\styles.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Bienvenido</h1>
+    </div>
+    <form class="contenedor_login" method="POST">
+        {% csrf_token %}
+        <h2>Login</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <div class="entradas">
+                    <input type="text" name="user" id="usuario" placeholder="Nombre de usuario" required>
+                </div>
+                <div class="entradas">
+                    <input type="password" name="passw" id="contraseña" placeholder="Contraseña" required>
+                </div>
+            </tbody>
+            <!-- {{formaUser_db}} Por esta forma se puede hacer pero no trae el CSS bien-->
+        </table>
+        <div class="boton">
+            <button type="submit">Iniciar sesion</button>
+        </div>
+
+        <!-- Mensajes de error -> Modificar los mensajes
+            
+            {% if messages %}
+        <ul class="entradas">
+            {% for message in messages %}
+                <li class="{{ message.tags }}"> {{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %} -->
+    </form>
+</body>
+</html>
